@@ -48,3 +48,8 @@ void Pessoa::imprimir() {
     cout << "Idade: " << _idade << " anos" << endl;
     cout << "Altura: " << _altura << " metros" << endl;
 }
+void Pessoa::imprimirDados() {
+    std::cout << "Nome: " << _nome << "\n";
+    std::cout << "Altura: " << _altura << "\n";
+    std::cout << "Idade: " << _idade << "\n";
+}

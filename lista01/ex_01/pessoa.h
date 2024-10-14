@@ -21,6 +21,7 @@ public:
     int get_idade();
     double get_altura();
     void imprimir();
+    void imprimirDados();
 
 };
 
