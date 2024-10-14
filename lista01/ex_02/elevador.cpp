@@ -4,11 +4,7 @@
 using namespace std;
 
 
-// Construtor para inicializar o elevador
-Elevador::Elevador(int capacidadeInicial, int totalAndaresInicial)
-    : _atual(0), _total_andares(totalAndaresInicial), _capacidade(capacidadeInicial), _pessoas_presentes(0) {
-    // O elevador começa no térreo (andar 0) e vazio
-}
+Elevador::Elevador(int capacidade, int totalandares): _total_andares(totalandares), _capacidade(capacidade) {}
 
 void Elevador::entra(){
 
@@ -25,6 +21,7 @@ void Elevador::sai(){
 
     if(_pessoas_presentes > 0){
         _pessoas_presentes--;
+        _capacidade++;
     }
     else{
         cout << "\nElevador Vazio " << endl;
@@ -45,6 +42,7 @@ void Elevador::sobe(){
 
     if(_atual < _total_andares){
         _atual++;
+        _capacidade--;
     }
     else{
         cout << "\nElevador no ultimo andar " << endl;
@@ -70,3 +68,4 @@ int Elevador::get_capacidade(){
 int Elevador::get_presentes() { // Corrigido para incluir 'Elevador::'
     return _pessoas_presentes;
 }
+

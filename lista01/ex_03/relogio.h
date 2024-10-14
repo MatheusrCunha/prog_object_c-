@@ -3,7 +3,6 @@
 
 class Relogio
 {
-
 private:
 
     int _hora;
@@ -11,11 +10,11 @@ private:
     int _segundo;
 
 public:
-    Relogio();
+    Relogio(int hora, int minuto, int segundo);
 
     void set_hora(int hh, int mm, int ss);
-    void get_hora();
-    void avancar();
+    int get_hora(int &h, int &m, int &s);
+    void tick();
 };
 
 #endif // RELOGIO_H

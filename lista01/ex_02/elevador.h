@@ -11,7 +11,7 @@ private:
     int _pessoas_presentes;
 
 public:
-    Elevador(int _t_capacidade, int _andar_inicial);
+    Elevador(int _capacidade, int _total_andares);
 
     void entra();
     void sai();

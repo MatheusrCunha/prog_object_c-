@@ -1,9 +1,16 @@
 #include <iostream>
+#include "relogio.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello World!" << endl;
+
+    Relogio r1;
+    cout << "hello world";
+
+
+
+
     return 0;
 }
