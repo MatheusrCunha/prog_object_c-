@@ -1,13 +1,14 @@
-
 #include "pessoa.h"
 #include <iostream>
 #include <string>
+
 using namespace std;
 
 Pessoa::Pessoa() {
 
-
-
+    this->_nome = "Cunha";
+    this->_altura = 1.70;
+    this->_idade = 27;
 }
 
 void Pessoa::set_nome(string nome_novo) {
