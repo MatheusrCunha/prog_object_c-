@@ -1,5 +1,5 @@
 #include <iostream>
-//#include <string>
+#include <string>
 
 using namespace std;
 
@@ -10,8 +10,8 @@ private:
 
 public:
 
-    World();
-    ~World();
+    //World();
+    //~World();
     void sayIt();
     void setName(string value);
 
